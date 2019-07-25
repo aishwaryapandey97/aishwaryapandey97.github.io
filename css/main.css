@@ -1,45 +1,11 @@
-/**
- * 
- *  TOC:
- *  01. webfonts and iconfonts
- *  02. base style overrides
- *  03. typography & general theme styles
- *  04. preloader
- *  05. forms
- *  06. buttons 
- *  07. other components
- *  08. common styles
- *  09. header styles
- *  10. intro
- *  11. about
- *  12. resume
- *  13. portfolio
- *  14. call-to-action section
- *  15. services
- *  16. stats
- *  17. contact
- *  18. footer
- *
- * =================================================================== 
- */
 
-
-/** 
- * ===================================================================
- * 01. webfonts and iconfonts - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 
 
 /** 
- * ===================================================================
- * 02. base style overrides - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
+ * 02. base style overrides 
  */
 html {
 	font-size: 10px;
@@ -73,8 +39,7 @@ body {
 }
 
 /**
- * links - (_document-setup.scss)
- * -------------------------------------------------------------------
+ * links 
  */
 a, a:visited {
 	color: #000000;
@@ -90,10 +55,7 @@ a:hover, a:focus, a:active {
 }
 
 /** 
- * ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
+ * 03. typography & general theme styles 
  */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "poppins-semibold", sans-serif;
@@ -263,8 +225,7 @@ hr {
 }
 
 /**
- * Lists - (_document-setup.scss)  
- * -------------------------------------------------------------------
+ * Lists 
  */
 ol {
 	list-style: decimal;
@@ -311,8 +272,7 @@ dd {
 }
 
 /**
- * tables - (_document-setup.scss)  
- * -------------------------------------------------------------------
+ * tables 
  */
 table {
 	border-width: 0;
@@ -344,8 +304,7 @@ th:last-child, td:last-child {
 }
 
 /**
- * Spacing - (_document-setup.scss)  
- * -------------------------------------------------------------------
+ * Spacing 
  */
 button, .button {
 	margin-bottom: 1.2;
@@ -371,8 +330,7 @@ form,
 }
 
 /**
- * floated image - (_document-setup.scss)  
- * -------------------------------------------------------------------
+ * floated image 
  */
 img.pull-right {
 	margin: .9rem 0 0 2.4rem;
@@ -382,8 +340,7 @@ img.pull-left {
 }
 
 /**
- * block grid paddings - (_document-setup.scss) 
- * -------------------------------------------------------------------
+ * block grid paddings 
  */
 .bgrid {
 	padding: 0 20px;
@@ -410,8 +367,7 @@ img.pull-left {
 }
 
 /**
- * pace.js styles - minimal  - (_document-setup.scss)
- * -------------------------------------------------------------------
+ * pace.js styles - minimal 
  */
 .pace {
 	-webkit-pointer-events: none;
@@ -434,10 +390,8 @@ img.pull-left {
 }
 
 /** 
- * ===================================================================
- * 04. preloader - (_preloader-1.scss)
- *
- * ------------------------------------------------------------------- 
+
+ * 04. preloader 
  */
 #preloader {
 	position: fixed;
@@ -497,10 +451,7 @@ img.pull-left {
 }
 
 /** 
- * ===================================================================
- * 05. forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- 
+ * 05. forms 
  */
 fieldset {
 	border: none;
@@ -616,7 +567,6 @@ label > input[type="checkbox"], label > input[type="radio"] {
 
 /**
  * Style Placeholder Text  
- * -
  */
 ::-webkit-input-placeholder {
 	color: #a1a1a1;
@@ -635,10 +585,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 }
 
 /** 
- * ===================================================================
- * 06. buttons - (_button-essentials.scss)
- *
- * ------------------------------------------------------------------- 
+ * 06. buttons 
  */
 .button,
 a.button,
@@ -741,15 +688,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /** 
- * ===================================================================
  * 07. other components - (_others.scss)
- *
- * ------------------------------------------------------------------- 
  */
 
 /**
- * alert box - (_alert-box.scss)
- * -------------------------------------------------------------------
+ * alert box
  */
 .alert-box {
 	padding: 2.1rem 4rem 2.1rem 3rem;
@@ -783,8 +726,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /**
- * additional typo styles - (_additional-typo.scss)
- * -------------------------------------------------------------------
+ * additional typo styles
  */
 
 /**
@@ -845,16 +787,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 /** 
  * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
- *
- * --------------------------------------------------------------------- 
  */
 .pull-quote {
 	position: relative;
@@ -886,16 +818,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 /** 
  * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
- *
- * Extend this object into your markup.
- *
- * ---------------------------------------------------------------------
  */
 .stats-tabs {
 	padding: 0;
@@ -931,8 +853,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /**
- * skillbars - (_skillbars.scss)
- * -------------------------------------------------------------------
+ * skillbars 
  */
 .skill-bars {
 	list-style: none;
@@ -962,29 +883,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 	height: 100%;
 }
-.skill-bars li .progress span {
-	position: absolute;
-	right: 0;
-	top: -3.6rem;
-	display: block;
-	font-family: "poppins-regular", sans-serif;
-	color: white;
-	font-size: 1.1rem;
-	line-height: 1;
-	background: #313131;
-	padding: .6rem .6rem;
-	border-radius: 3px;
-}
-.skill-bars li .progress span::after {
-	position: absolute;
-	left: 50%;
-	bottom: -5px;
-	margin-left: -5px;
-	border-right: 5px solid transparent;
-	border-left: 5px solid transparent;
-	border-top: 5px solid #313131;
-	content: "";
-}
 
 .skill-bars li .percent5   { width: 5%; }
 .skill-bars li .percent10  { width: 10%; }
@@ -1009,10 +907,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /** 
- * ===================================================================
- * 08. common styles (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+ * 08. common styles
  */
 .grey-section {
 	background: #ebebeb;
@@ -1046,7 +941,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /**
  * responsive:
  * common styles
- * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:768px) {
 	.section-intro {
@@ -1073,10 +967,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /** 
- * ===================================================================
- * 09. header styles - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+ * 09. header styles 
  */
 header {
 	position: fixed;
@@ -1113,13 +1004,12 @@ header .logo a {
 	color: transparent;
 	width: 92px;
 	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
+	background: url("") no-repeat center;
 	background-size: 92px 15px;
 }
 
 /**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
+ * menu toggle 
  */
 .menu-toggle {
 	float: left;
@@ -1257,7 +1147,6 @@ header .logo a {
 /**
  * responsive:
  * header styles
- * --------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
 	header .top-bar {
@@ -1282,10 +1171,7 @@ header .logo a {
 
 
 /** 
- * ===================================================================
- * 10. intro - (_layout.scss) 
- *
- * ------------------------------------------------------------------- 
+ * 10. intro 
  */
 #intro {
 	background: #151515 url(../img1/giphy.gif) no-repeat;
@@ -1416,7 +1302,6 @@ header .logo a {
 /**
  * responsive:
  * Intro
- * --------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
@@ -1478,10 +1363,7 @@ header .logo a {
 
 
 /** 
- * ===================================================================
- * 11. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+ * 11. about 
  */
 #about {
 	background: #FFFFFF;
@@ -1561,7 +1443,6 @@ header .logo a {
 /**
  * responsive:
  * about
- * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
 	.intro-info {
@@ -1609,10 +1490,8 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 12. resume - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+
+ * 12. resume 
  */
 #resume {
 	padding-top: 12rem;
@@ -1703,7 +1582,6 @@ header .logo a {
 /**
  * responsive:
  * resume
- * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
 	#resume .timeline-header {
@@ -1778,10 +1656,7 @@ header .logo a {
 
 
 /** 
- * ===================================================================
- * 13. portfolio - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+ * 13. portfolio 
  */
 #portfolio {
 	background: #FFFFFF;
@@ -1864,7 +1739,6 @@ header .logo a {
 /**
  * responsive:
  * portfolio
- * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
 	#portfolio .folio-title {
@@ -1883,8 +1757,7 @@ header .logo a {
 }
 
 /**
- * Popup Modal - (_layout.scss)
- * ------------------------------------------------------------------
+ * Popup Modal 
  */
 .popup-modal {
 	max-width: 550px;
@@ -1961,8 +1834,7 @@ header .logo a {
 }
 
 /**
- * transition effect for modal popup - (_layout.scss)
- * ------------------------------------------------------------------ 
+ * transition effect for modal popup
  */
 
 /* overlay at start */
@@ -2015,10 +1887,7 @@ header .logo a {
 }
 
 /** 
- * ===================================================================
- * 14. call-to-action section - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+ * 14. call-to-action section 
  */
 #cta {
 	padding-top: 10.2rem;
@@ -2042,8 +1911,7 @@ header .logo a {
 }
 
 /**
- * section ads - (_layout.scss)
- * ------------------------------------------------------------------- 
+ * section ads 
  */
 .section-ads h2 {
 	position: relative;
@@ -2069,8 +1937,6 @@ header .logo a {
 
 /**
  * responsive:
- * cta
- * -------------------------------------------------------------------
  */
 @media only screen and (max-width:650px) {
 	.cta-content {
@@ -2083,10 +1949,7 @@ header .logo a {
 
 
 /** 
- * ===================================================================
- * 15. services - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+ * 15. services
  */
 #services {
 	background: #313131 url(../img1/cover_bg.jpg) no-repeat center;
@@ -2171,10 +2034,7 @@ header .logo a {
 
 
 /** 
- * ===================================================================
- * 16. stats - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+ * 16. stats 
  */
 #stats {
 	background: rgb(0, 173, 66);
@@ -2210,8 +2070,6 @@ header .logo a {
 
 /**
  * responsive:
- * stats
- * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	#stats .stat:nth-child(n) {
@@ -2238,10 +2096,7 @@ header .logo a {
 
 
 /** 
- * ===================================================================
- * 17. contact - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+ * 17. contact
  */
 #contact {
 	background: #ffffff;
@@ -2267,10 +2122,10 @@ header .logo a {
 	color: rgba(58, 58, 58, 0.7);
 }
 .contact-form :-moz-placeholder {
-	color: rgba(58, 58, 58, 0.7);  /* Firefox 18- */
+	color: rgba(58, 58, 58, 0.7);  
 }
 .contact-form ::-moz-placeholder {
-	color: rgba(58, 58, 58, 0.7);  /* Firefox 19+ */
+	color: rgba(58, 58, 58, 0.7);  
 }
 .contact-form :-ms-input-placeholder {
 	color: rgba(58, 58, 58, 0.7);
@@ -2423,8 +2278,7 @@ header .logo a {
 }
 
 /**
- * loader animation - (_layout.scss)
- * --------------------------------------------------------------- 
+ * loader animation 
  */
 .s-loader {
 	margin: 1.2rem auto 3rem;
@@ -2479,10 +2333,7 @@ header .logo a {
 
 
 /** 
- * ===================================================================
- * 18. footer - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
+ * 18. footer 
  */
 footer {
 	padding-bottom: 3rem;
@@ -2525,8 +2376,6 @@ footer .footer-social li a:hover {
 
 /**
  * responsive:
- * footer
- * -------------------------------------------------------------------
  */
 @media only screen and (max-width:768px) {
 	footer {
@@ -2547,8 +2396,7 @@ footer .footer-social li a:hover {
 }
 
 /**
- * go to top - (_layout.scss)
- * ------------------------------------------------------------------- 
+ * go to top 
  */
 #go-top {
 	position: fixed;
