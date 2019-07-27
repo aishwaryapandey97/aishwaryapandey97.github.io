@@ -38,6 +38,7 @@ body {
 	color: #6e6e6e;
 }
 
+
 /**
  * links 
  */
@@ -2473,4 +2474,9 @@ footer .footer-social li a:hover {
 	  font-size: 1.5rem;
 	}
   }
+.txt-type{
+	color: #10be3c;
+	font-size: 60%;
+}
+
 
