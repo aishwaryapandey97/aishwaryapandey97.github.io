@@ -1239,12 +1239,13 @@ header .logo a {
 }
 .intro-content .intro-position {
 	font-family: "lora-regular", serif;
-	font-size: 1.7rem;
+	font-size: 2rem;
 	line-height: 2.4rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	color: #FFFFFF;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	margin-top: 5rem;
 }
 .intro-content .intro-position span {
 	display: inline-block;
@@ -1269,7 +1270,7 @@ header .logo a {
 	height: 6rem !important;
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
-	margin-top: .6rem;
+	margin-top: 1rem;
 	font-size: 1.3rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
@@ -2441,4 +2442,35 @@ footer .footer-social li a:hover {
 #go-top a:hover {
 	background: #02460d;
 }
+
+/* Cursor */
+.txt-type > .txt {
+	border-right: 0.2rem solid #777;
+  }
+  
+  @media(min-width: 1200px) {
+	h1 {
+	  font-size: 5rem;
+	}
+  }
+  
+  @media(max-width: 800px) {
+	.container {
+	  padding: 0 1rem;
+	}
+  
+	h1 {
+	  font-size: 3rem;
+	}
+  }
+  
+  @media(max-width: 500px) {
+	h1 {
+	  font-size: 2.5rem;
+	}
+  
+	h2 {
+	  font-size: 1.5rem;
+	}
+  }
 
